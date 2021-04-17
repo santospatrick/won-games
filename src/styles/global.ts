@@ -40,12 +40,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
 
-  html, body, #__next {
-    height: 100%;
-  }
-
   body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: ${({ theme }) => theme.font.family};
+    font-size: ${({ theme }) => theme.font.sizes.medium};
   }
 `
 
